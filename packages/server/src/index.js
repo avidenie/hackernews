@@ -12,7 +12,9 @@ let idCount = links.length
 const resolvers = {
   Query: {
     info: () => `This is the API of a HackerNews clone`,
-    feed: () => links
+    feed: () => links,
+    // eslint-disable-next-line no-unused-vars
+    link: (parent, args) => links.find(link => link.id === args.id)
   },
   Mutation: {
     // eslint-disable-next-line no-unused-vars
