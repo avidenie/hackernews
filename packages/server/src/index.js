@@ -26,6 +26,19 @@ const resolvers = {
       }
       links.push(link)
       return link
+    },
+    // eslint-disable-next-line no-unused-vars
+    update: (parent, args) => {
+      let existingLink = links.find(link => link.id === args.id)
+      if (existingLink) {
+        if (args.url) {
+          existingLink.url = args.url
+        }
+        if (args.description) {
+          existingLink.description = args.description
+        }
+      }
+      return existingLink
     }
   }
 }
