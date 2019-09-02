@@ -39,6 +39,16 @@ const resolvers = {
         }
       }
       return existingLink
+    },
+    // eslint-disable-next-line no-unused-vars
+    delete: (parent, args) => {
+      let existingPosition = links.findIndex(link => link.id === args.id)
+      if (existingPosition === -1) {
+        return null
+      }
+      const deletedLink = links[existingPosition]
+      delete links[existingPosition]
+      return deletedLink
     }
   }
 }
