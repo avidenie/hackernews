@@ -3,5 +3,9 @@
     "eslint:recommended",
     "plugin:node/recommended",
     "plugin:prettier/recommended"
-  ]
+  ],
+  "plugins": ["sort-requires"],
+  "rules": {
+    "sort-requires/sort-requires": "error"
+  }
 }
