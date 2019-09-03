@@ -6,7 +6,8 @@
   "license": "MIT",
   "dependencies": {
     "eslint-plugin-node": "^9.2.0",
-    "graphql-yoga": "^1.18.3"
+    "graphql-yoga": "^1.18.3",
+    "prisma-client-lib": "^1.34.8"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
