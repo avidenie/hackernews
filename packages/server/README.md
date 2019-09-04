@@ -1,4 +1,4 @@
-`HackerNews`
-============
+`Hacker News Server`
+====================
 
-A simple HackerNews clone built using GraphQL tool set.
+The server part of a simple Hacker News server built using GraphQL tool set.

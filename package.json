@@ -18,7 +18,8 @@
   ],
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
     ]
   },
   "husky": {

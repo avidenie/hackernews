@@ -1,40 +1,19 @@
 {
   "name": "@hackernews/server",
   "version": "0.0.0",
+  "description": "The server part of a simple Hacker News server built using GraphQL tool set.",
   "private": true,
-  "main": "index.js",
-  "license": "MIT",
+  "main": "src/index.js",
+  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "eslint-plugin-node": "^9.2.0",
     "graphql-yoga": "^1.18.3",
     "jsonwebtoken": "^8.5.1",
     "prisma-client-lib": "^1.34.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "@typescript-eslint/eslint-plugin": "1.x",
-    "@typescript-eslint/parser": "1.x",
-    "babel-eslint": "10.x",
-    "eslint": "6.x",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-jsx-a11y": "6.x",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-sort-requires": "^2.1.0",
-    "husky": "^3.0.4",
-    "prettier": "^1.18.2"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
-    }
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-sort-requires": "^2.1.0"
   },
   "engines": {
     "node": ">=8.10.0"
