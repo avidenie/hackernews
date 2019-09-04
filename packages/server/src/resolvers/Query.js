@@ -2,7 +2,7 @@ function info() {
   return `This is the API of a HackerNews clone`
 }
 
-function feed(root, args, context) {
+async function feed(root, args, context) {
   const where = args.filter
     ? {
         OR: [
@@ -11,7 +11,12 @@ function feed(root, args, context) {
         ]
       }
     : {}
-  return context.prisma.links({ where })
+  const links = await context.prisma.links({
+    where,
+    skip: args.skip,
+    first: args.first
+  })
+  return links
 }
 
 function link(parent, args, context) {
