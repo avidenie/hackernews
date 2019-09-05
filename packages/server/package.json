@@ -5,6 +5,9 @@
   "private": true,
   "main": "src/index.js",
   "license": "ISC",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "graphql-yoga": "^1.18.3",
